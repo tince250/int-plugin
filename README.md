@@ -24,6 +24,6 @@ The **Error Wizard** plugin for IntelliJ IDEA enhances your development experien
 ![](media/ss1.png)
 ![](media/ss2.png)
 
-## Limitations & Improvenments
+## Limitations & Improvements
 - Currently, it is possible to select code parts only. Future work would enable selecting error messages from Console and Problem windows as well.
 - LLM interaction is per-search, no context saving or back and froth chatting available. Left for further development.
