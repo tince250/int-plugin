@@ -12,10 +12,7 @@ The **Error Wizard** plugin for IntelliJ IDEA enhances your development experien
 
 ## Installation
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/error-wizard-plugin.git
-   ```
+1. Clone the repository.
 2. Open the project in IntelliJ IDEA
 3. Insert Groq API key (free to make @ https://groq.com/) at `src/main/java/actions/ChatbotClient.java`
 3. Run plugin
