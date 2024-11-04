@@ -2,7 +2,7 @@
 
 ## Overview
 
-The **Error Wizard** plugin for IntelliJ IDEA enhances your development experience by allowing you to select error messages directly from the console and interact with a chatbot powered by Groq's LLaMA language model. This plugin aims to provide immediate context and assistance for error messages, streamlining debugging and development.
+The **Error Wizard** plugin for IntelliJ IDEA enhances your development experience by allowing you to select parts of your code causing error messages and interact with a chatbot powered by Groq's LLaMA language model. This plugin aims to provide immediate context and assistance for error messages, streamlining debugging and development.
 
 ## Features
 
