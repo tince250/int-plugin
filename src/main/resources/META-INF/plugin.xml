@@ -1,18 +1,23 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
     <id>com.github.tince250.intplugin</id>
-    <name>int-plugin</name>
+    <name>Search GitHub Demo</name>
     <vendor>tince250</vendor>
+
+    <description><![CDATA[
+    Searches code snippets in GitHub from your IDE!<br>
+    ]]></description>
 
     <depends>com.intellij.modules.platform</depends>
 
-    <resource-bundle>messages.MyBundle</resource-bundle>
-
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.tince250.intplugin.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
+        <toolWindow id="Error Wizzard" anchor="bottom" factoryClass="toolwindow.ChatbotToolWindowFactory" />
     </extensions>
-
-    <applicationListeners>
-        <listener class="com.github.tince250.intplugin.listeners.MyApplicationActivationListener" topic="com.intellij.openapi.application.ApplicationActivationListener"/>
-    </applicationListeners>
+    <actions>
+        <!-- Add your actions here -->
+        <action id="actions.SearchGithubAction" class="actions.AskLLMAction" text="Ask Error Wizzard"
+                description="Ask LLM about your error.">
+            <add-to-group group-id="EditorPopupMenu" anchor="after" relative-to-action="$SearchWeb"/>
+        </action>
+    </actions>
 </idea-plugin>
